@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin page</title>
+<link rel="stylesheet" href="loginbox.css" />
+</head>
+<body style="text-align:left; background-color: darkgrey; ">
+    <script src="adminscript.js"></script>
+    <script>window.alert("Invalid Username or Password");</script>
+    <h1 style="text-align: center; color: rgb(50, 158, 50);">Sign in</h1>
+    <h1 style="font-size: 20px; text-align: center">to continue to adminpage </h1>
+    <table align="center" bgcolor="grey" cellspacing="0" cellpadding="70" >
+    <tr>
+	<form action="http://localhost:8080/Project24/Login" method="post">
+    <th><div  class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required onchange="checkname(this)"/>
+      <span class="error" id="name" style="font-size: 15px ; color:red;"> </span><br>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required onchange="validpass(this)"/>
+      <span class="error" id="code" style="font-size:15px; color: red;"> </span>
+
+      <button type="submit">Sign in</button>
+ 	  </form>
+      <label for="newaccount"><b>Don't have account?</b></label>
+      <a href="createaccount.html">
+      <button type="button" >Create Account</button>
+      </a>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" /> Remember me
+      </label></th>
+      <th><div class="imgcontainer">
+        <img src="signin-image.jpg" alt="signin" class="avatar" />
+      </div></th>
+    </tr>
+    </div>
+    </table>
+    
+  </body>
+</html>

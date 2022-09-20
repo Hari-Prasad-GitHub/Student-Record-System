@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student database</title>
+    <link rel="stylesheet" href="loginbox.css" />
+  </head>
+  <body>
+    <script src="createaccscript.js"></script>
+    <h1 style="text-align: center; color: green">CREATE DATABASE</h1>
+    <a href="menu.html">
+      <button type="button" style="width: 8%">Menu</button>
+    </a>
+    <div class="logout">
+      <a href="index.html"> <button type="button">Log out</button></a>
+    </div>
+
+    <table align="center" cellspacing="7px" cellpadding="2px">
+      <form action="http://localhost:8080/Project24/Stucreadb" method="post">
+        <tr>
+          <th>Register no.:</th>
+          <th>
+            <input
+              type="number"
+              placeholder="Enter reg no."
+              name="regno"
+              required
+            />
+          </th>
+        </tr>
+        <tr>
+          <th>Name:</th>
+          <th>
+            <input
+              type="text"
+              placeholder="Enter name"
+              name="uname"
+              required
+              onchange="checkname(this)"
+            />
+            <span class="error" id="name"></span><br />
+          </th>
+        </tr>
+        <tr>
+          <th>DOB:</th>
+          <th><input type="date" name="dob" required /></th>
+        </tr>
+        <tr>
+          <th>Email id:</th>
+          <th>
+            <input
+              type="email"
+              placeholder="Enter emailid"
+              name="emailid"
+              required
+              onchange="checkemail(this)"
+            />
+            <span class="error" id="email"></span><br />
+          </th>
+        </tr>
+        <tr>
+          <th>Mark 1:</th>
+          <th>
+            <input
+              type="number"
+              placeholder="Mark 1"
+              name="m1"
+              id="1"
+              onchange="checkmark(this)"
+            />
+            <span class="error" id="mark1"></span><br />
+          </th>
+        </tr>
+        <tr>
+          <th>Mark 2:</th>
+          <th>
+            <input
+              type="number"
+              placeholder="Mark 2"
+              name="m2"
+              id="2"
+              onchange="checkmark(this)"
+            />
+            <span class="error" id="mark2"></span><br />
+          </th>
+        </tr>
+        <tr>
+          <th>Mark 3:</th>
+          <th>
+            <input
+              type="number"
+              placeholder="Mark 3"
+              name="m3"
+              id="3"
+              onchange="checkmark(this)"
+            />
+            <span class="error" id="mark3"></span><br />
+          </th>
+        </tr>
+
+        <table align="center" cellspacing="8px" cellpadding="20px">
+          <tr>
+            <th><button type="submit">Create Account</button></th>
+            <th><button type="reset">Clear</button></th>
+          </tr>
+        </table>
+      </form>
+    </table>
+  </body>
+</html>

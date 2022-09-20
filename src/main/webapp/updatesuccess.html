@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Update result</title>
+    <link rel="stylesheet" href="loginbox.css" />
+  </head>
+  <body>
+  <script>window.alert("Data Updated Successfully")</script>
+    <div class="logout">
+      <a href="menu.html">
+        <button type="button">Back</button>
+      </a>
+    </div>
+    <h1 style="text-align: center; color: green">Update Student Database</h1>
+    <form action="http://localhost:8080/Project24/UpdateResult" method="post">
+      <table
+        style="margin-left: auto; margin-right: auto"
+        cellspacing="10px"
+        cellpadding="10"
+      >
+        <tr>
+          <th>Register No:</th>
+          <th><input type="number" name="regno" placeholder="Enter rno:" required/></th>
+        </tr>
+        <tr>
+          <th><button type="submit">View</button></th>
+          <th><button type="reset">Clear</button></th>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

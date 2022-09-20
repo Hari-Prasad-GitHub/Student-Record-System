@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Delete Result</title>
+    <link rel="stylesheet" href="loginbox.css" />
+  </head>
+  <body>
+    <script src="createaccount.html"></script>
+    
+    <script>
+      window.alert("Data Not Found");
+    </script>
+
+    <h1 style="color: green; text-align: center">Delete Student Database</h1>
+    <a href="menu.html">
+      <button type="button" style="width: 8%">Menu</button>
+    </a>
+    <form action="http://localhost:8080/Project24/DeleteData" method="post">
+      <table
+        style="margin-left: auto; margin-right: auto"
+        cellspacing="10px"
+        cellpadding="10px"
+      >
+        <tr>
+          <th>Register no:</th>
+          <th>
+            <input
+              type="number"
+              name="regno"
+              required
+              placeholder="xxx"
+              onchange="checknumber(this)"
+            />
+            <span class="error" id="rno"></span>
+          </th>
+        </tr>
+        <tr>
+          <th><button type="submit">Delete</button></th>
+          <th><button type="reset">Clear</button></th>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

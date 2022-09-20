@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Create Account</title>
+    <link rel="stylesheet" href="loginbox.css" />
+</head>
+<body style="text-align: left; background-color: rgb(77, 91, 155)">
+    <script src="createaccscript.js"></script>
+    <h1 style="text-align: center; size: 25px; color: rgb(80, 200, 255)">
+      Create your Account
+    </h1>
+    <table align="center" bgcolor="lightblue" cellspacing="0" cellpadding="30">
+      <tr>
+        <th>
+        <form action="http://localhost:8080/Project24/Createdb" method="post">
+          <div class="container">
+            <label for="username"><b>Name:</b></label>
+            <input
+              type="text"
+              placeholder="Enter name"
+              name="username"
+              required
+              onchange="checkname(this)"
+            />
+            <span
+              class="error"
+              id="name"
+              style="color: red; font-size: 15px"
+            ></span><br>
+            
+            <label for="employeeid"><b>Employee id:</b></label>
+            <input
+              type="number"
+              placeholder="Enter employee-id"
+              name="employeeid"
+              required
+              onchange="checkempid(this)"
+            />
+            <span
+              class="error"
+              id="empid"
+              style="color: red; font-size: 15px"
+            ></span><br>
+
+            <label for="emailid"><b>Email id:</b></label>
+            <input
+              type="text"
+              placeholder="Enter email"
+              name="emailid"
+              required
+              onchange="checkemail(this)"
+            />
+            <span
+              class="error"
+              id="email"
+              style="color: red; font-size: 15px"
+            ></span>
+            <br>
+
+            <label for="password"><b>Enter password:</b></label>
+            <input
+              type="password"
+              placeholder="Enter password"
+              name="password"
+              required
+              onchange="checkpass(this)"
+            />
+            <span
+              class="error"
+              id="code"
+              style="color: red; font-size: 15px"
+            ></span><br>
+
+            <label for="retype"><b>Retype Password:</b></label>
+            <input
+              type="password"
+              placeholder="Enter password"
+              name="retype"
+              required
+              onchange="matchpass(this)"
+            />
+            <span
+              class="error"
+              id="match"
+              style="color: red; font-size: 15px"
+            ></span>
+
+            <button type="submit">Create Account</button>
+            </form>
+            <label for="signin"><b>Already have account?</b></label>
+            <a href="index.html">
+              <button type="button">Sign-in</button>
+            </a>
+          </div>
+        </th>
+        <th>
+          <div class="imgcontainer">
+            <img src="signup-image.jpg" alt="signup" class="avatar" />
+          </div>
+        </th>
+      </tr>
+    </table>
+  </body>
+</html>

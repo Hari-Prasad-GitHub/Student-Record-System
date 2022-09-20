@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>view result</title>
+    <link rel="stylesheet" href="loginbox.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center; color: green">Result viewer</h1>
+    <a href="menu.html">
+        <button type="button" style="width: 8%;">Home</button>
+    </a>
+    <div class="logout">
+      <a href="admin.html">
+        <button type="button">Log out</button>
+      </a>
+
+    
+    </div>
+    <form action="http://localhost:8080/Project24/ShowResult" method="post">
+      <table align="center" cellspacing="20px" cellpadding="15px">
+        <tr>
+          <th>View by:</th>
+          <th>
+            <select name="view">
+              <option value="all">View All</option>
+              <option value="rno" selected>Register Number</option>
+              <option value="pass">Only Pass</option>
+              <option value="80">Above 80%</option>
+              <option value="fail">Only Fail</option>
+            </select>
+          </th>
+        </tr>
+        <tr>
+          <th>Register no.:</th>
+          <th><input type="number" name="regno" /></th>
+        </tr>
+        <tr>
+          <th><button type="submit">View Result</button></th>
+          <th><button type="reset">Clear</button></th>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

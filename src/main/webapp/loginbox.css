@@ -1,0 +1,66 @@
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 5px solid rgb(121, 218, 12);
+  box-sizing: border-box;
+}
+body {
+  background-color: grey;
+}
+span {
+  color: red;
+  font-size: 15px;
+}
+
+button {
+  background-color: #2d0891;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  opacity: 0.8;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 0px 100px 4;
+}
+
+img.avatar {
+  width: 90%;
+  border-radius: 10%;
+}
+
+.container {
+  padding: 10px;
+  max-width: 300px;
+}
+
+.logout {
+  max-width: 100px;
+  float: right;
+}
+
+table {
+  text-align: left;
+  text-transform: uppercase;
+  table-layout: fixed;
+  font-size: large;
+  border-collapse: collapse;
+}
+
+th.a{
+	border:2px solid black;
+	padding:10px;
+}
+tr.a{
+	border:2px solid black;
+	padding:10px;
+}

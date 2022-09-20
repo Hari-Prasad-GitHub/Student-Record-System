@@ -1,0 +1,12 @@
+In mysql:
+
+Create database called 'project24'.
+
+Create table called 'admins'.(empid integer, name varchar(20), emailid varchar(30), password varchar(65))
+
+Create table called 'students'.(regno integer, name varchar(20),dob varchar(11), emailid varchar(30),
+ password varchar(15), m1 integer, m2 integer, m3 integer, total integer, avg float, result varchar(5))
+
+Run project24 and create account as admin and sign in.
+
+Run project24/universityresults.html to check result as students.
